@@ -1,0 +1,16 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:l="/lib/layout" xmlns:f="/lib/form">
+    <l:layout title="${%Simple Inter-Master Communication}">
+        <l:main-panel>
+            <h1>${%JGroups master to master PoC}</h1>
+
+            <div>
+                <form method="post" action="sendMsgToAll">
+                    <f:textbox name="msg"/>
+                    <f:submit value="${%Send message to all masters}" />
+                </form>
+            </div>
+
+        </l:main-panel>
+    </l:layout>
+</j:jelly>
